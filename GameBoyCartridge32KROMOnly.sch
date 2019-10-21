@@ -1,0 +1,188 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L GameBoy:GAMEBOY_CART_EDGE U1
+U 1 1 5DAD0CDA
+P 2600 2250
+F 0 "U1" H 2600 3265 50  0000 C CNN
+F 1 "GAMEBOY_CART_EDGE" H 2600 3174 50  0000 C CNN
+F 2 "" H 2600 2250 50  0001 C CNN
+F 3 "" H 2600 2250 50  0001 C CNN
+	1    2600 2250
+	1    0    0    -1  
+$EndComp
+NoConn ~ 1800 1800
+NoConn ~ 1800 2000
+NoConn ~ 1800 2200
+NoConn ~ 1800 2500
+Text Label 1600 2700 2    50   ~ 0
+D0
+Wire Wire Line
+	1800 2700 1600 2700
+Wire Wire Line
+	1800 2800 1600 2800
+Wire Wire Line
+	1800 2900 1600 2900
+Wire Wire Line
+	1800 3000 1600 3000
+Wire Wire Line
+	1800 3100 1600 3100
+Wire Wire Line
+	1800 3200 1600 3200
+Wire Wire Line
+	1800 3300 1600 3300
+Wire Wire Line
+	1800 3400 1600 3400
+Text Label 1600 2800 2    50   ~ 0
+D1
+Text Label 1600 2900 2    50   ~ 0
+D2
+Text Label 1600 3000 2    50   ~ 0
+D3
+Text Label 1600 3100 2    50   ~ 0
+D4
+Text Label 1600 3200 2    50   ~ 0
+D5
+Text Label 1600 3300 2    50   ~ 0
+D6
+Text Label 1600 3400 2    50   ~ 0
+D7
+Wire Wire Line
+	6200 1500 6400 1500
+Wire Wire Line
+	6200 1600 6400 1600
+Wire Wire Line
+	6200 1700 6400 1700
+Wire Wire Line
+	6200 1800 6400 1800
+Wire Wire Line
+	6200 1900 6400 1900
+Wire Wire Line
+	6200 2000 6400 2000
+Wire Wire Line
+	6200 2100 6400 2100
+Wire Wire Line
+	6200 2200 6400 2200
+Text Label 6400 1500 0    50   ~ 0
+D0
+Text Label 6400 1600 0    50   ~ 0
+D1
+Text Label 6400 1700 0    50   ~ 0
+D2
+Text Label 6400 1800 0    50   ~ 0
+D3
+Text Label 6400 1900 0    50   ~ 0
+D4
+Text Label 6400 2000 0    50   ~ 0
+D5
+Text Label 6400 2100 0    50   ~ 0
+D6
+Text Label 6400 2200 0    50   ~ 0
+D7
+Wire Wire Line
+	3400 1500 5000 1500
+Wire Wire Line
+	3400 1600 5000 1600
+Wire Wire Line
+	3400 1700 5000 1700
+Wire Wire Line
+	3400 1800 5000 1800
+Wire Wire Line
+	3400 1900 5000 1900
+Wire Wire Line
+	3400 2000 5000 2000
+Wire Wire Line
+	3400 2100 5000 2100
+Wire Wire Line
+	3400 2200 5000 2200
+Wire Wire Line
+	3400 2300 5000 2300
+Wire Wire Line
+	3400 2400 5000 2400
+Wire Wire Line
+	3400 2500 5000 2500
+Wire Wire Line
+	3400 2600 5000 2600
+Wire Wire Line
+	3400 2700 5000 2700
+Wire Wire Line
+	3400 2800 5000 2800
+Wire Wire Line
+	3400 2900 5000 2900
+Wire Wire Line
+	3400 3000 3600 3000
+Wire Wire Line
+	5000 3700 4800 3700
+Wire Wire Line
+	5000 3800 4800 3800
+Wire Wire Line
+	5000 3500 4800 3500
+Wire Wire Line
+	5000 3300 4800 3300
+Wire Wire Line
+	5000 3200 4800 3200
+Wire Wire Line
+	5000 3100 4800 3100
+Wire Wire Line
+	5000 3000 4800 3000
+Wire Wire Line
+	1800 2400 1600 2400
+Text Label 3600 3000 0    50   ~ 0
+~ROM_CS
+Text Label 4800 3700 2    50   ~ 0
+~ROM_CS
+Text Label 4800 3800 2    50   ~ 0
+~RD
+Text Label 1600 2400 2    50   ~ 0
+~RD
+$Comp
+L power:GND #PWR0101
+U 1 1 5DAEF15D
+P 1600 1600
+F 0 "#PWR0101" H 1600 1350 50  0001 C CNN
+F 1 "GND" V 1605 1472 50  0000 R CNN
+F 2 "" H 1600 1600 50  0001 C CNN
+F 3 "" H 1600 1600 50  0001 C CNN
+	1    1600 1600
+	0    1    1    0   
+$EndComp
+$Comp
+L power:VCC #PWR0102
+U 1 1 5DAEF373
+P 1600 1500
+F 0 "#PWR0102" H 1600 1350 50  0001 C CNN
+F 1 "VCC" H 1617 1673 50  0000 C CNN
+F 2 "" H 1600 1500 50  0001 C CNN
+F 3 "" H 1600 1500 50  0001 C CNN
+	1    1600 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1600 1500 1800 1500
+Wire Wire Line
+	1800 1600 1600 1600
+$Comp
+L Memory_Flash:SST39SF040 U2
+U 1 1 5DAF1647
+P 5600 2700
+F 0 "U2" H 5600 4181 50  0000 C CNN
+F 1 "SST39SF040" H 5600 4090 50  0000 C CNN
+F 2 "" H 5600 3000 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/25022B.pdf" H 5600 3000 50  0001 C CNN
+	1    5600 2700
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
